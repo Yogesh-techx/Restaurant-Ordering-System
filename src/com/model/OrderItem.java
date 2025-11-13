@@ -8,8 +8,10 @@ public class OrderItem {
     private int quantity;
     private double subTotal;
 
+    //Empty Constructor for flexibility
     public OrderItem() {}
 
+    //Parameterized Constructors for ease to create objects quickly
     public OrderItem(int itemId, int orderId, int foodId, int quantity, double subTotal) {
         this.itemId = itemId;
         this.orderId = orderId;

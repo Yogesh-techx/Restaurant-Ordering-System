@@ -5,18 +5,22 @@ public class Admin {
     private String username;
     private String password;
 
+    //Empty Constructor for flexibility
     public Admin() {}
 
+    //Parameterized Constructors for ease to create objects quickly
     public Admin(int adminId, String username, String password) {
         this.adminId = adminId;
         this.username = username;
         this.password = password;
     }
+    
     public Admin(String username, String password) {
     	this.username = username;
     	this.password = password;
     }
-
+    
+    //getters and setters
     public int getAdminId() {
         return adminId;
     }

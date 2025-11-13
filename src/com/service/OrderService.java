@@ -58,22 +58,26 @@ public class OrderService {
         return orderDAO.getOrdersByCustomer(name);
     }
     
+    // 7. Get order items by order id
     public List<OrderItem> getOrderItems(int orderId) {
         return orderItemDAO.getItemsByOrder(orderId);
     }
     
+    // 8. Get order by order id
     public Order getOrderById(int orderId) {
         return orderDAO.getOrderById(orderId);
     }
-    
+    // 9. Update quantity
     public boolean updateOrderItemQuantity(int orderId, int foodId, int newQty, double subTotal) {
         return orderItemDAO.updateOrderItemQuantity(orderId, foodId, newQty, subTotal);
     }
 
+    // 10. Remove an item
     public boolean removeOrderItem(int orderId, int foodId) {
         return orderItemDAO.removeOrderItem(orderId, foodId);
     }
 
+    // 11. Calculate total
     public double calculateOrderTotal(int orderId) {
         return orderItemDAO.calculateTotal(orderId);
     }

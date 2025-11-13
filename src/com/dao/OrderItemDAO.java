@@ -89,7 +89,7 @@ public class OrderItemDAO {
         return itemList;
     }
     
- // 4. Update quantity of an order item
+    // 4. Update quantity of an order item
     public boolean updateOrderItemQuantity(int orderId, int foodId, int newQty, double subTotal) {
         String sql = "UPDATE order_items SET quantity = ?, sub_total = ? WHERE order_id = ? AND food_id = ?";
         try (Connection conn = DBConnection.getConnection();
