@@ -1,0 +1,19 @@
+# Ignore environment files
+.env
+
+# Ignore bin folder (compiled classes)
+bin/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore Eclipse-specific metadata
+.project
+.classpath
+.settings/
+
+# Ignore logs
+*.log
+
+# Ignore receipt files
+receipts/
